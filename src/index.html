@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"HomePage"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section class="categories">
+				<div class="categories__container">
+					<h1 class="categories__title">
+						<div class="categories__image-box">
+							<div class="categories__image-ibg">
+								<img src="@img/green-leaf.svg" alt="Leaf">
+							</div>
+						</div>
+						Категории
+					</h1>
+					<div class="categories__list">
+						<article class="categories__item category">
+							<div class="category__wrapper">
+								<div class="category__image-box">
+									<div class="category__image-ibg">
+										<img src="@img/category-1.svg" alt="">
+										<img class="category__hover" src="@img/category-1-hover.svg" alt="">
+									</div>
+								</div>
+								<p class="category__name">Пестициды</p>
+								<div class="category__circles">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</div>
+						</article>
+						<article class="categories__item category">
+							<div class="category__wrapper">
+								<div class="category__image-box">
+									<div class="category__image-ibg">
+										<img src="@img/category-2.svg" alt="">
+										<img class="category__hover" src="@img/category-2-hover.svg" alt="">
+									</div>
+								</div>
+								<p class="category__name">Культуры</p>
+								<div class="category__circles">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</div>
+						</article>
+						<article class="categories__item category">
+							<div class="category__wrapper">
+								<div class="category__image-box">
+									<div class="category__image-ibg">
+										<img src="@img/category-3.svg" alt="">
+										<img class="category__hover" src="@img/category-3-hover.svg" alt="">
+									</div>
+								</div>
+								<p class="category__name">Вредители</p>
+								<div class="category__circles">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</div>
+							<div class="category__leaf-box">
+								<div class="category__leaf-ibg">
+									<img src="@img/brown-leaf.svg" alt="Leaf">
+								</div>
+							</div>
+						</article>
+						<article class="categories__item category">
+							<div class="category__wrapper">
+								<div class="category__image-box">
+									<div class="category__image-ibg">
+										<img src="@img/category-4.svg" alt="">
+										<img class="category__hover" src="@img/category-4-hover.svg" alt="">
+									</div>
+								</div>
+								<p class="category__name">Действующие <br> вещества</p>
+								<div class="category__circles">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<section class="auth">
+				<div class="auth__container">
+					<button class="auth__btn" data-popup="#authorization">Авторизация</button>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
